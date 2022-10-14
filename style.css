@@ -1,0 +1,211 @@
+* {
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.jumbotron {
+    display: flex;
+    padding: 15px;
+    background-color: rgb(170, 169, 169);
+    border-bottom: solid 1px black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav > a {
+    background-color: white;
+    margin-right: 12px;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(82, 82, 82);
+    font-size: 15px;
+    font-weight: 600;
+    color: #3a3a3a;
+    transition: all .3s ease-in-out;
+}
+
+.nav > a:hover {
+    background-color: black;
+    color: white;
+}
+
+.wrapper {
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+
+}
+
+.about {
+    max-width: 750px;
+}
+
+.picture-card {
+    max-height: 407px;
+    max-width: 245px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 9px 5px 12px #80808099;
+}
+
+.picture-card > img {
+    width: 100%;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.opdracht-wrap, .betoog-wrap {
+    max-width: 535px;
+    min-width: 400px;
+    max-height: 700px;
+    /* padding: 20px; */
+    margin: 10px;
+    outline: 3px solid grey;
+    /* overflow: scroll; */
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.betoog-wrap {
+    max-width: 100%!important;
+    margin: 35px;
+}
+
+.opdracht-wrap > h2, .betoog-wrap > h2 {
+    background: lightgrey;
+    margin: 0px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+.opdracht, .betoog {
+    max-width: 535px;
+    min-width: 400px;
+    max-height: 608px;
+    padding: 20px;
+    /* margin: 10px; */
+    /* outline: 3px solid grey; */
+    overflow: scroll;
+    transition: all .3s ease-in-out;
+}
+
+.betoog {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .opdracht {
+        max-width: 400px;
+        min-width: 400px;
+    }
+  }
+
+.day {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    margin-top: 20px;
+}
+
+.day > img {
+    padding: 10px;
+    margin: 10px;
+    outline: 1px solid black;
+    border-radius: -41px;
+    background: lightgray;
+}
+
+.day > h3, .betoog > h3 {
+    margin: 0px;
+    text-align: center;
+}
+
+.bait {
+    position: absolute;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.bait2 {
+    right: 0px;
+}
+
+.bait > img {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.text > p {
+    background: white;
+    color: purple;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.but {
+    display: flex;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.but > p {
+    padding: 5px;
+    background: #9aff00;
+    color: white;
+    max-width: 123px;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0px;
+    border-radius: 19px;
+    /* position: absolute; */
+    /* right: 0px; */
+    /* left: 0px; */
+    outline: 2px dotted red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+.bait2 > .text > .but > p {
+    background-color: aqua;
+    border-radius: 0px;
+    
+
+}
